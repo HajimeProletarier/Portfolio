@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Hajime Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body class="bg-gray-100 text-gray-900">
+    <!-- ヘッダー -->
+    <header class="bg-gray-800 text-white p-4">
+      <div
+        class="container mx-auto flex flex-col md:flex-row justify-between items-center"
+      >
+        <h1 class="text-2xl font-bold">Hajime Portfolio</h1>
+        <nav class="mt-2 md:mt-0">
+          <ul class="flex space-x-4">
+            <li><a href="#links" class="hover:underline">リンク</a></li>
+            <li><a href="#tech" class="hover:underline">技術スタック</a></li>
+            <li><a href="#career" class="hover:underline">経歴</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- リンクセクション -->
+    <section
+      id="links"
+      class="container mx-auto my-6 bg-white p-6 rounded shadow"
+    >
+      <h2 class="text-xl font-semibold border-b-2 border-gray-800 pb-2">
+        リンク
+      </h2>
+      <ul class="mt-4 space-y-2">
+        <li>
+          GitHub:
+          <a
+            href="https://github.com/HajimeProletarier"
+            target="_blank"
+            class="text-blue-500 hover:underline"
+            >GitHub Profile</a
+          >
+        </li>
+        <li>
+          qiita:
+          <a
+            href="https://qiita.com/Hajime_Protocol"
+            target="_blank"
+            class="text-blue-500 hover:underline"
+            >qiita Profile</a
+          >
+        </li>
+      </ul>
+    </section>
+
+    <!-- 技術スタックセクション -->
+    <section
+      id="tech"
+      class="container mx-auto my-6 bg-white p-6 rounded shadow"
+    >
+      <h2 class="text-xl font-semibold border-b-2 border-gray-800 pb-2">
+        技術スタック
+      </h2>
+      <div class="mt-4 space-y-6">
+        <!-- Java -->
+        <div class="flex items-start">
+          <div class="text-4xl text-red-600 mr-4">
+            <i class="fab fa-java"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Java</h3>
+            <span
+              class="inline-block bg-red-100 text-red-800 text-xs px-2 py-1 rounded"
+              >レベル3</span
+            >
+            <p class="mt-1">
+              MVCモデルのWebアプリを設計から自作できます。Spring Bootを使用して,
+              MariaDB や PostgreSQL サーバーと連携した CRUD
+              の実装が可能です。Java Silverレベルの問題がおおむね解けます。
+            </p>
+          </div>
+        </div>
+
+        <!-- Unity -->
+        <div class="flex items-start">
+          <div class="text-4xl text-blue-600 mr-4">
+            <i class="fab fa-unity"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Unity</h3>
+            <span
+              class="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded"
+              >レベル2</span
+            >
+            <p class="mt-1">
+              教科書の作例レベルのプロジェクトを自作できます。UnityでのC#スクリプト作成が可能です。
+            </p>
+          </div>
+        </div>
+
+        <!-- Unreal Engine 5 -->
+        <div class="flex items-start">
+          <div class="text-4xl text-indigo-600 mr-4">
+            <i class="fas fa-gamepad"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Unreal Engine 5</h3>
+            <span
+              class="inline-block bg-indigo-100 text-indigo-800 text-xs px-2 py-1 rounded"
+              >レベル2</span
+            >
+            <p class="mt-1">
+              教科書の作例レベルのプロジェクトを自作できます。Blueprintによるプログラミングが可能です。
+            </p>
+          </div>
+        </div>
+
+        <!-- Python -->
+        <div class="flex items-start">
+          <div class="text-4xl text-yellow-600 mr-4">
+            <i class="fab fa-python"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Python</h3>
+            <span
+              class="inline-block bg-yellow-100 text-yellow-800 text-xs px-2 py-1 rounded"
+              >レベル2</span
+            >
+            <p class="mt-1">
+              コマンドラインやNotebook上で動作する計算アプリやツールを作成できます。Djangoは勉強中です。
+            </p>
+          </div>
+        </div>
+
+        <!-- JavaScript -->
+        <div class="flex items-start">
+          <div class="text-4xl text-green-600 mr-4">
+            <i class="fab fa-js-square"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">JavaScript</h3>
+            <span
+              class="inline-block bg-green-100 text-green-800 text-xs px-2 py-1 rounded"
+              >レベル1</span
+            >
+            <p class="mt-1">
+              1画面で完結する計算ツールなどの作成ができます。JSフレームワークは勉強中です。
+            </p>
+          </div>
+        </div>
+
+        <!-- クラウドインフラ -->
+        <div class="flex items-start">
+          <div class="text-4xl text-purple-600 mr-4">
+            <i class="fas fa-cloud"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">クラウドインフラ</h3>
+            <span
+              class="inline-block bg-purple-100 text-purple-800 text-xs px-2 py-1 rounded"
+              >レベル0</span
+            >
+            <p class="mt-1">
+              Azureを使用して簡単な3層アーキテクチャのWebシステムを構築できる……こともあります。
+              Heroku, Renderも使うことがあります。
+            </p>
+          </div>
+        </div>
+
+        <!-- AI ツール -->
+        <div class="flex items-start">
+          <div class="text-4xl text-pink-600 mr-4">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">AI ツール</h3>
+            <p class="mt-1">
+              ChatGPT, Gemini, ClaudeなどのLLMを日常的に使用しています。Cursor,
+              Copilotなどのコーディング補完ツールも使用します。またStable
+              Diffusion, suno, viggle, soraなどの生成AIも使用します。
+            </p>
+          </div>
+        </div>
+
+        <!-- Notion -->
+        <div class="flex items-start">
+          <div class="text-4xl text-gray-600 mr-4">
+            <i class="fas fa-sticky-note"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Notion</h3>
+            <p class="mt-1">全てのドキュメントをNotionに記録しています。</p>
+          </div>
+        </div>
+
+        <!-- Editor -->
+        <div class="flex items-start">
+          <div class="text-4xl text-indigo-500 mr-4">
+            <i class="fas fa-code"></i>
+          </div>
+          <div>
+            <h3 class="text-lg font-medium">Editor</h3>
+            <p class="mt-1">
+              Eclipse, Visual Studio, VSCode (& Cursor) を使用しています。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 経歴セクション -->
+    <section
+      id="career"
+      class="container mx-auto my-6 bg-white p-6 rounded shadow"
+    >
+      <h2 class="text-xl font-semibold border-b-2 border-gray-800 pb-2">
+        経歴
+      </h2>
+      <ul class="mt-4 list-disc list-inside space-y-1">
+        <li>2024.8 求職者支援訓練</li>
+        <li>
+          2023.7 株式会社 トッパン・グラフィックスコミュニケーションズ 派遣社員
+        </li>
+        <li>
+          2022.8 株式会社 ソニーインタラクティブ・エンターテインメント
+          アルバイト
+        </li>
+        <li>2018.4 東京理科大学 理学部 入学</li>
+      </ul>
+    </section>
+
+    <!-- フッター -->
+    <footer class="bg-gray-800 text-white text-center p-4">
+      <p>&copy; 2025 Hajime</p>
+    </footer>
+  </body>
+</html>
